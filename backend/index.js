@@ -20,7 +20,7 @@ app.use(cookieParser())
 app.use(urlencoded({ extended: true }))
 //Middleware for sharing data between frontend and backend servers
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://job-portal-frontend-hy4k.onrender.com",
     credentials: true
 }))
 

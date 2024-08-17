@@ -2,6 +2,7 @@ import { setAllJobs } from "@/redux/jobSlice";
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "sonner";
 
 const useGetAllJobs = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const useGetAllJobs = () => {
         }
       } catch (error) {
         console.log(error);
+        toast.error(error.response.data.message);
       }
     };
     fetchAllJobs();
