@@ -24,12 +24,12 @@ const Applicants = () => {
     };
     fetchAllApplicants();
   }, []);
-
+  console.log(allApplicants);
   return (
     <div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-bold text-xl my-5">
-          Applicants {allApplicants?.applications.length}
+          Applicants {allApplicants?.applications?.length}
         </h1>
         <ApplicantsTable />
       </div>
