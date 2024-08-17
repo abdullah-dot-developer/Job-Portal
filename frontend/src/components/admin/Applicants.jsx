@@ -14,7 +14,7 @@ const Applicants = () => {
     const fetchAllApplicants = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/application/${params.id}/applicants`,
+          `https://job-portal-mu3d.onrender.com/api/v1/application/${params.id}/applicants`,
           { withCredentials: true }
         );
         dispatch(setAllApplicants(res.data.job));

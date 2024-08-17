@@ -10,7 +10,7 @@ const useGetAllJobs = () => {
     const fetchAllJobs = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/job/get?keyword=${searchedQuery}`,
+          `https://job-portal-mu3d.onrender.com/api/v1/job/get?keyword=${searchedQuery}`,
           {
             withCredentials: true,
           }

@@ -41,7 +41,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/user/register`,
+        `https://job-portal-mu3d.onrender.com/api/v1/user/register`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

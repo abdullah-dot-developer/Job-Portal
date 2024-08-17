@@ -45,7 +45,7 @@ const CompanySetup = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8000/api/v1/company/update/${params.id}`,
+        `https://job-portal-mu3d.onrender.com/api/v1/company/update/${params.id}`,
         formData,
         {
           headers: {

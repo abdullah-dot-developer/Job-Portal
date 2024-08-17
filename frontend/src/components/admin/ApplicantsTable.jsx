@@ -24,7 +24,7 @@ const ApplicantsTable = () => {
     try {
       axios.defaults.withCredentials = true;
       const res = await axios.post(
-        `http://localhost:8000/api/v1/application/status/${id}/update`,
+        `https://job-portal-mu3d.onrender.com/api/v1/application/status/${id}/update`,
         { status }
       );
       //   console.log(res);

@@ -10,7 +10,7 @@ const useGetAppliedJobs = () => {
     const fetchAppliedJobs = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/application/get`,
+          `https://job-portal-mu3d.onrender.com/api/v1/application/get`,
           { withCredentials: true }
         );
         // console.log(res.data);

@@ -10,7 +10,7 @@ const useGetSingleJob = (jobId) => {
     const fetchSingleJob = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/job/get/${jobId}`,
+          `https://job-portal-mu3d.onrender.com/api/v1/job/get/${jobId}`,
           {
             withCredentials: true,
           }

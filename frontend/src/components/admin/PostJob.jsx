@@ -49,7 +49,7 @@ const PostJob = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `http://localhost:8000/api/v1/job/post`,
+        `https://job-portal-mu3d.onrender.com/api/v1/job/post`,
         input,
         {
           headers: {
